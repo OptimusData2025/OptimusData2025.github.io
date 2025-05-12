@@ -1,0 +1,111 @@
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #fff;
+    color: #333;
+}
+header {
+    position: fixed;
+    width: 100%;
+    background: #012d5e;
+    padding: 10px 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+}
+header .logo span {
+    color: #2bdc5b;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+.hero {
+    padding: 100px 20px 60px;
+    background: #001e3c;
+    color: #fff;
+    text-align: center;
+}
+.hero .btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #2bdc5b;
+    border: none;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 12px;
+    width: 200px;
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.portfolio-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.item {
+    width: 200px;
+    height: 100px;
+    background: #e3e3e3;
+    padding: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 10px;
+}
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+button {
+    background: #2bdc5b;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #012d5e;
+    color: white;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease;
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
